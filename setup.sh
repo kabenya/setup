@@ -20,12 +20,7 @@ npm install -g jshint
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
-# Install vim
 sudo apt-get update
-sudo apt-get install -y vim
-
-#Install byobu
-sudo apt-get install -y byobu
 
 # git pull and install dotfiles as well
 cd $HOME
@@ -36,3 +31,6 @@ git clone https://github.com/startup-class/dotfiles.git
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
+
+# install heroku toolbelt
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
